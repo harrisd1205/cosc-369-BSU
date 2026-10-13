@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple To-Do List | Create Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Simple To-Do List</h1>
+    <p class="subtitle">Create an account to get started</p>
+    <form id="signup-form" novalidate>
+      <label for="username">Username</label>
+      <input id="username" name="username" autocomplete="username" required minlength="3" maxlength="30">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="new-password" required minlength="8">
+      <button type="submit">Create Account</button>
+      <p id="message" role="status" aria-live="polite"></p>
+    </form>
+    <p class="note">Demo only: this page validates account details but does not create or store an account. A secure backend is needed before real registration is available.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
